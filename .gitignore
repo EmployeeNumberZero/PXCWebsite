@@ -1,0 +1,10 @@
+# macOS
+.DS_Store
+
+# OneDrive
+.sync-conflict*
+~$*
+*.tmp
+
+# Thumbnails
+._*
