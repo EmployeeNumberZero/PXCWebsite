@@ -23,6 +23,24 @@
             padding: 40px 20px;
         }
 
+        .logo-link {
+            position: fixed;
+            top: 20px;
+            left: 20px;
+            z-index: 1000;
+        }
+
+        .logo {
+            width: 60px;
+            height: 60px;
+            border-radius: 12px;
+            transition: transform 0.3s ease;
+        }
+
+        .logo:hover {
+            transform: scale(1.1);
+        }
+
         .container {
             max-width: 900px;
             margin: 0 auto;
@@ -77,6 +95,11 @@
         }
 
         @media (max-width: 768px) {
+            .logo {
+                width: 50px;
+                height: 50px;
+            }
+
             .container {
                 padding: 30px 20px;
             }
@@ -92,12 +115,16 @@
     </style>
 </head>
 <body>
+    <a href="index.html" class="logo-link">
+        <img src="PXCLogo.png" alt="PharmacyXChange Logo" class="logo">
+    </a>
+
     <div class="container">
         <h1>Advertise with Us</h1>
 
         <h2>No better place to reach pharmacists than on the XChange</h2>
 
-        <p>Contact us now: <a href="mailto:ads@pharmacyxchange.ca">ads@pharmacyxchange.ca</a></p>
+        <p>Contact us now: <a href="mailto:contact@pharmacyxchange.ca">contact@pharmacyxchange.ca</a></p>
 
         <a href="index.html" class="back-link">← Back to Home</a>
     </div>
