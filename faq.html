@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FAQ - PharmacyXChange</title>
+    <style>
+        :root {
+            --PXCGreen: rgba(27, 156, 70, 1);
+            --PXCGreenHover: rgba(27, 156, 70, 0.85);
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Arial, sans-serif;
+            background: linear-gradient(135deg, var(--PXCGreen) 0%, var(--PXCGreenHover) 100%);
+            min-height: 100vh;
+            padding: 40px 20px;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            background: white;
+            padding: 60px;
+            border-radius: 20px;
+            box-shadow: 0 10px 40px rgba(0, 0, 0, 0.2);
+        }
+
+        h1 {
+            color: var(--PXCGreen);
+            margin-bottom: 40px;
+            font-size: 36px;
+            text-align: center;
+        }
+
+        .faq-list {
+            list-style: none;
+            padding: 0;
+        }
+
+        .faq-item {
+            margin-bottom: 20px;
+            padding: 20px;
+            background: #f8f9fa;
+            border-radius: 10px;
+            border-left: 4px solid var(--PXCGreen);
+        }
+
+        .faq-item p {
+            color: #333;
+            line-height: 1.8;
+            font-size: 16px;
+        }
+
+        .faq-item a {
+            color: var(--PXCGreen);
+            text-decoration: none;
+        }
+
+        .faq-item a:hover {
+            text-decoration: underline;
+        }
+
+        .back-link {
+            display: inline-block;
+            color: var(--PXCGreen);
+            text-decoration: none;
+            margin-top: 30px;
+            font-size: 18px;
+            font-weight: 500;
+        }
+
+        .back-link:hover {
+            text-decoration: underline;
+        }
+
+        @media (max-width: 768px) {
+            .container {
+                padding: 30px 20px;
+            }
+
+            h1 {
+                font-size: 28px;
+            }
+
+            .faq-item {
+                padding: 15px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Frequently Asked Questions</h1>
+
+        <ul class="faq-list">
+            <li class="faq-item">
+                <p>For NPN drugs please add name in notes. NPN auto population will be available next update.</p>
+            </li>
+
+            <li class="faq-item">
+                <p>All posted ads are attached to a pharmacy not pharmacist! Please remember that when deleting/editing a pharmacy from your profile. All attached listings will be deleted automatically and messages archived.</p>
+            </li>
+
+            <li class="faq-item">
+                <p>Contact the posting ad via phone or through our messaging app. Verify the contact information via google etc. if needed.</p>
+            </li>
+
+            <li class="faq-item">
+                <p>Report any suspicious listings to our email <a href="mailto:contact@pharmacyxchange.ca">contact@pharmacyxchange.ca</a> - add as much information as possible and screenshots.</p>
+            </li>
+
+            <li class="faq-item">
+                <p>Report any technical difficulties using <a href="mailto:contact@pharmacyxchange.ca">contact@pharmacyxchange.ca</a></p>
+            </li>
+
+            <li class="faq-item">
+                <p>For license numbers under 8-9 digits please add zeros to the beginning. For example (000001234) instead of 1234.</p>
+            </li>
+
+            <li class="faq-item">
+                <p>Verify the other pharmacist's licence! For example in Ontario use <a href="https://ocpinfo.com/" target="_blank" rel="noopener noreferrer">https://ocpinfo.com/</a></p>
+            </li>
+
+            <li class="faq-item">
+                <p>Never disclose patient information to any user on the application. We will never ask for it.</p>
+            </li>
+
+            <li class="faq-item">
+                <p>You can only see postings related to the province the user registered the profile with.</p>
+            </li>
+
+            <li class="faq-item">
+                <p>If you have more than one license in different provinces please set up a separate account for it.</p>
+            </li>
+
+            <li class="faq-item">
+                <p>For advertising opportunities please contact us at <a href="mailto:contact@pharmacyxchange.ca">contact@pharmacyxchange.ca</a></p>
+            </li>
+        </ul>
+
+        <a href="index.html" class="back-link">← Back to Home</a>
+    </div>
+</body>
+</html>

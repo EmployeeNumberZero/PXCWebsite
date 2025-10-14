@@ -5,6 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Privacy Policy - PharmacyXChange</title>
     <style>
+        :root {
+            --PXCGreen: rgba(27, 156, 70, 1);
+            --PXCGreenHover: rgba(27, 156, 70, 0.85);
+        }
+
         * {
             margin: 0;
             padding: 0;
@@ -13,7 +18,7 @@
 
         body {
             font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Arial, sans-serif;
-            background: linear-gradient(135deg, #98FB98 0%, #7FD97F 100%);
+            background: linear-gradient(135deg, var(--PXCGreen) 0%, var(--PXCGreenHover) 100%);
             min-height: 100vh;
             padding: 40px 20px;
         }
@@ -28,14 +33,14 @@
         }
 
         h1 {
-            color: #98FB98;
+            color: var(--PXCGreen);
             margin-bottom: 30px;
             font-size: 36px;
             text-align: center;
         }
 
         h2 {
-            color: #98FB98;
+            color: var(--PXCGreen);
             margin-top: 40px;
             margin-bottom: 20px;
             font-size: 24px;
@@ -100,7 +105,7 @@
 
         .back-link {
             display: inline-block;
-            color: #98FB98;
+            color: var(--PXCGreen);
             text-decoration: none;
             margin-top: 30px;
             font-size: 18px;
