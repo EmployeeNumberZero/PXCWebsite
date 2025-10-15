@@ -58,7 +58,7 @@
             color: #333;
             font-size: clamp(32px, 10vw, 64px);
             font-weight: 600;
-            margin-bottom: 80px;
+            margin-bottom: 30px;
             font-family: 'Georgia', 'Times New Roman', serif;
             font-style: italic;
             padding: 0 20px;
@@ -67,6 +67,21 @@
             overflow-wrap: normal;
             hyphens: none;
             box-sizing: border-box;
+        }
+
+        .early-access-link {
+            display: block;
+            color: var(--PXCGreen);
+            text-decoration: none;
+            font-size: clamp(20px, 5vw, 28px);
+            font-weight: 500;
+            margin-bottom: 80px;
+            transition: all 0.3s ease;
+        }
+
+        .early-access-link:hover {
+            color: var(--PXCGreenHover);
+            text-decoration: underline;
         }
 
         .subtitle {
@@ -159,6 +174,8 @@
 
         <h1>PharmacyXChange</h1>
 
+        <a href="early-access.html" class="early-access-link">Sign up for Early Access Today!</a>
+
         <div class="store-buttons">
             <a href="#" class="store-button">App Store</a>
             <a href="#" class="store-button">Google Play Store</a>
@@ -167,6 +184,7 @@
 
     <footer>
         <span>Copyright PharmacyXChange © 2025</span> |
+        <a href="early-access.html">Early Access</a> |
         <a href="about.html">About Us</a> |
         <a href="advertise.html">Advertise</a> |
         <a href="faq.html">FAQ</a> |
