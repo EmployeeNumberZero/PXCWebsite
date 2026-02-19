@@ -3,143 +3,84 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About Us - PharmacyXChange</title>
+    <title>PharmacyXChange - Coming Soon</title>
     <style>
         :root {
             --PXCGreen: rgba(27, 156, 70, 1);
             --PXCGreenHover: rgba(27, 156, 70, 0.85);
         }
 
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
+        * { box-sizing: border-box; margin: 0; padding: 0; }
 
         body {
             font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Arial, sans-serif;
-            background: linear-gradient(135deg, var(--PXCGreen) 0%, var(--PXCGreenHover) 100%);
             min-height: 100vh;
-            padding: 40px 20px;
-        }
-
-        .logo-link {
-            position: fixed;
-            top: 20px;
-            left: 20px;
-            z-index: 1000;
-        }
-
-        .logo {
-            width: 60px;
-            height: 60px;
-            border-radius: 12px;
-            transition: transform 0.3s ease;
-        }
-
-        .logo:hover {
-            transform: scale(1.1);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            background: white;
+            color: #333;
+            padding: 20px;
+            text-align: center;
         }
 
         .container {
-            max-width: 900px;
-            margin: 0 auto;
-            background: white;
-            padding: 60px;
-            border-radius: 20px;
-            box-shadow: 0 10px 40px rgba(0, 0, 0, 0.2);
+            max-width: 760px;
+            width: 100%;
+        }
+
+        .logo {
+            width: 150px;
+            height: 150px;
+            border-radius: 30px;
+            margin-bottom: 28px;
         }
 
         h1 {
-            color: var(--PXCGreen);
-            margin-bottom: 30px;
-            font-size: 36px;
-            text-align: center;
+            font-size: clamp(34px, 9vw, 64px);
+            font-family: 'Georgia', 'Times New Roman', serif;
+            font-style: italic;
+            margin-bottom: 18px;
         }
 
-        h2 {
-            color: var(--PXCGreen);
-            margin-bottom: 30px;
-            font-size: 24px;
-            text-align: center;
-            font-weight: 600;
+        .message {
+            color: #666;
+            font-size: clamp(18px, 4vw, 24px);
+            line-height: 1.5;
+            margin-bottom: 36px;
         }
 
-        p {
-            color: #333;
-            line-height: 1.8;
-            margin-bottom: 16px;
+        footer {
+            margin-top: auto;
+            padding-top: 28px;
             font-size: 16px;
-            text-align: left;
+            color: #666;
         }
 
-        p.contact-info {
-            text-align: center;
-            margin-top: 40px;
-        }
-
-        .description {
-            margin-top: 40px;
-        }
-
-        .back-link {
-            display: inline-block;
+        footer a {
             color: var(--PXCGreen);
             text-decoration: none;
-            margin-top: 30px;
-            font-size: 18px;
-            font-weight: 500;
+            margin: 0 10px;
         }
 
-        .back-link:hover {
+        footer a:hover {
+            color: var(--PXCGreenHover);
             text-decoration: underline;
-        }
-
-        @media (max-width: 768px) {
-            .logo {
-                width: 50px;
-                height: 50px;
-            }
-
-            .container {
-                padding: 30px 20px;
-            }
-
-            h1 {
-                font-size: 28px;
-            }
         }
     </style>
 </head>
 <body>
-    <a href="index.html" class="logo-link">
+    <main class="container">
         <img src="PXCLogo.png" alt="PharmacyXChange Logo" class="logo">
-    </a>
+        <h1>PharmacyXChange</h1>
+        <p class="message">we’re cooking something really special. Coming soon.</p>
+    </main>
 
-    <div class="container">
-        <h1>About Us</h1>
-
-        <h2>PharmacyXChange is committed to connecting pharmacists and revolutionizing the pharmaceutical marketplace.</h2>
-
-        <div class="description">
-            <p>PharmacyXChange is designed to connect licensed pharmacists across independent and chain pharmacy locations, creating a powerful, collaborative network focused on improving patient care, optimizing inventory management, and strengthening the position of community-based pharmacies.</p>
-
-            <p>A key feature of the platform is its overstock and near-expiry medication exchange system, which enables pharmacies to list surplus or soon-to-expire medications for sale. This reduces waste, recovers lost revenue, and ensures that essential medications reach pharmacies where they're needed most — improving access and continuity of care.</p>
-
-            <p>Pharmacists can also take advantage of the "Wanted/Seeking" feature to post requests for backordered or hard-to-find medications. By tapping into a network of trusted peers, pharmacies can locate critical medications faster and more reliably than through traditional supply chains.</p>
-
-            <p>To support patient retention, the app allows pharmacies to post and search for missing medications they cannot currently fill. This ensures patients can still receive their complete prescriptions from one location, helping to maintain trust and loyalty while minimizing patient migration to competitors.</p>
-
-            <p>Importantly, this platform provides independent and small-chain pharmacies with a competitive edge against large national chains. By uniting through a shared system, pharmacies benefit from power in numbers — enabling them to pool resources, share inventory and serving power.</p>
-
-            <p>By leveraging the strength of a connected pharmacist community, this application empowers users to deliver better service, reduce operational waste, and remain competitive in an increasingly consolidated and challenging pharmacy landscape.</p>
-        </div>
-
-        <p class="contact-info">proudly Canadian 🇨🇦🍁<br>
-        1155 North Service Road West, Oakville, Ontario<br>
-        hit our line: <a href="mailto:contact@pharmacyxchange.ca">contact@pharmacyxchange.ca</a></p>
-
-        <a href="index.html" class="back-link">← Back to Home</a>
-    </div>
+    <footer>
+        <span>Copyright PharmacyXChange © 2025</span> |
+        <a href="privacy.html">Privacy</a> |
+        <a href="terms.html">Terms</a>
+    </footer>
 </body>
 </html>
