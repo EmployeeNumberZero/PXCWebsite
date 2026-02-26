@@ -7,6 +7,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Page Not Found - PharmacyXchange</title>
+    <link rel="icon" type="image/png" href="/PXCLogo.png">
 
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Outfit:wght@300;400;600;700&display=swap');
@@ -56,6 +57,20 @@
                 opacity: 1;
                 transform: translateY(0);
             }
+        }
+
+        .logo {
+            width: 80px;
+            height: 80px;
+            border-radius: 18px;
+            margin-bottom: 24px;
+            box-shadow: 0 10px 20px rgba(13, 92, 66, 0.1);
+            border: 2px solid white;
+            transition: transform 0.3s ease;
+        }
+
+        .logo:hover {
+            transform: scale(1.05);
         }
 
         .error-code {
@@ -169,6 +184,9 @@
 
 <body>
     <main class="container">
+        <a href="index.html">
+            <img src="/PXCLogo.png" alt="PharmacyXchange Logo" class="logo">
+        </a>
         <div class="error-code">404</div>
         <h1>Oops! You look <span class="highlight">lost.</span></h1>
         <p class="message">The page you are looking for might have been removed, had its name changed, or is temporarily
